@@ -12,7 +12,17 @@ body {
 
 .container{
     background-color: cornflowerblue;
-    display: flex;
+    /* display: flex; Ajusta el ancho al espacio disponible*/
+   /*  display: inline-flex; Ajusta el 'ancho' al espacio de los contenedores */
+
+   display: flex;
+
+/*    flex-direction: row; Valor por default. Dirección Main Axis de <- a izq */
+/* flex-direction: row-reverse; Dirección Main Axis <- der a izq*/
+
+/* flex-direction: column; Cambia la dirección del main axis de Arr a Aba */
+/* flex-direction: column-reverse; Cambia la dirección del main axis de Aba a Arr */
+
 }
 
 .item{
