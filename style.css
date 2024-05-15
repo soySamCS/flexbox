@@ -12,26 +12,48 @@ body {
 
 .container{
     background-color: cornflowerblue;
-    /* display: flex; Ajusta el ancho al espacio disponible*/
-   /*  display: inline-flex; Ajusta el 'ancho' al espacio de los contenedores */
-
    display: flex;
-
-/*    flex-direction: row; Valor por default. Dirección Main Axis de <- a izq */
-/* flex-direction: row-reverse; Dirección Main Axis <- der a izq*/
-
-/* flex-direction: column; Cambia la dirección del main axis de Arr a Aba */
-/* flex-direction: column-reverse; Cambia la dirección del main axis de Aba a Arr */
-
 }
 
+/* 
+
+    Flex Shrink
+
+    Es una propiedad que va a ajustar el factor de encogimiento o estrechamiento (enconjimiento, apachurramiento, aplastamiento) de los elementos (items)
+
+    flex-shrink:1 -> Este es el valor por default. Recibe valores númericos: 1, 2, 3, 4, ... Entre más grande sea el número, mayor será su factor de decrecimiento.
+
+*/
+
 .item{
-    width: 100px;
-    height: 100px;
-    background-color: crimson;
+    flex-basis: 350px; /* Ancho. Flex-direction:row */
+    flex-shrink: 1; /* Este es el valor por default */
+
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    padding-top: 32px;
     border: 1px solid white;
+    background-color: crimson;
+}
+
+/* Crear clases para los items */
+
+.tron1{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.tron2{
+    flex-shrink: 2;
+    flex-grow: 2;
+}
+
+.tron3{
+    flex-shrink: 3;
+    flex-grow: 3;
+}
+
+.tron4{
+    flex-shrink: 4;
+    flex-grow: 4;
 }
