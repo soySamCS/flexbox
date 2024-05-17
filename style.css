@@ -10,34 +10,42 @@ body {
     box-sizing: border-box;
 }
 
-/* 
-
-Gap -> Espacio entre los elementos.
-
-Recibe valores en números con unidades relativas o absolutas.
-
-Esta propiedad se pasa al contenedor.
-
-*/
-
 .container{
-    width: 500px;
     background-color: cornflowerblue;
     display: flex;
-    /* gap: 24px; */ /* Espacio entre los elementos */
-    /* gap: 3rem; */ /* Unidades absolutas: px o relativas: em o rem */
-    column-gap: 16px; /* Espacios entre los elementos en el eje vertical */
-    flex-wrap: wrap;
-    row-gap: 32px; /* Espacio entre los elemetnos en la horizontal */
-    gap: 4px 32px; /* Cuando hay 2 valores, el primero es para el espacio horizontal y el segundo con el espacio vertical */
+
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+
 }
+
 
 .item{
     width: 100px;
     height: 100px;
+    
+
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     border: 1px solid white;
     background-color: crimson;
+}
+
+/* 
+
+    alig-self -> Se pasa a uno o varios elementos en particular.
+
+    Va a alinear el eje transvesal a ese elemento únicamente. Y sobre escribe la porpiedad de aling-items y su valor si se ha declardo en el contenedor.
+
+    Recibe los mismos valores que aling-item:
+
+    start, end, center, stretch, baseline
+
+*/
+
+.solito{
+    align-self: flex-end;
+/*     height: auto; */
 }
