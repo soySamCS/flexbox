@@ -10,50 +10,34 @@ body {
     box-sizing: border-box;
 }
 
-.container{
-    background-color: cornflowerblue;
-   display: flex;
-}
-
 /* 
 
-    Flex Shrink
+Gap -> Espacio entre los elementos.
 
-    Es una propiedad que va a ajustar el factor de encogimiento o estrechamiento (enconjimiento, apachurramiento, aplastamiento) de los elementos (items)
+Recibe valores en números con unidades relativas o absolutas.
 
-    flex-shrink:1 -> Este es el valor por default. Recibe valores númericos: 1, 2, 3, 4, ... Entre más grande sea el número, mayor será su factor de decrecimiento.
+Esta propiedad se pasa al contenedor.
 
 */
 
-.item{
-    flex-basis: 350px; /* Ancho. Flex-direction:row */
-    flex-shrink: 1; /* Este es el valor por default */
+.container{
+    width: 500px;
+    background-color: cornflowerblue;
+    display: flex;
+    /* gap: 24px; */ /* Espacio entre los elementos */
+    /* gap: 3rem; */ /* Unidades absolutas: px o relativas: em o rem */
+    column-gap: 16px; /* Espacios entre los elementos en el eje vertical */
+    flex-wrap: wrap;
+    row-gap: 32px; /* Espacio entre los elemetnos en la horizontal */
+    gap: 4px 32px; /* Cuando hay 2 valores, el primero es para el espacio horizontal y el segundo con el espacio vertical */
+}
 
+.item{
+    width: 100px;
+    height: 100px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     border: 1px solid white;
     background-color: crimson;
-}
-
-/* Crear clases para los items */
-
-.tron1{
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-
-.tron2{
-    flex-shrink: 2;
-    flex-grow: 2;
-}
-
-.tron3{
-    flex-shrink: 3;
-    flex-grow: 3;
-}
-
-.tron4{
-    flex-shrink: 4;
-    flex-grow: 4;
 }
