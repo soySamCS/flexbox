@@ -35,7 +35,7 @@ body {
 
 /* 
 
-    alig-self -> Se pasa a uno o varios elementos en particular.
+    aling-self -> Se pasa a uno o varios elementos en particular.
 
     Va a alinear el eje transvesal a ese elemento únicamente. Y sobre escribe la porpiedad de aling-items y su valor si se ha declardo en el contenedor.
 
